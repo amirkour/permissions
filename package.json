@@ -1,0 +1,23 @@
+{
+  "name": "permissions",
+  "version": "1.0.0",
+  "description": "modeling user organizations and permissions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amirkour/permissions.git"
+  },
+  "author": "amir kouretchian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amirkour/permissions/issues"
+  },
+  "homepage": "https://github.com/amirkour/permissions#readme",
+  "dependencies": {
+    "sequelize": "^3.27.0",
+    "sequelize-cli": "^2.4.0"
+  }
+}
