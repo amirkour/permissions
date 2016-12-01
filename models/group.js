@@ -1,15 +1,15 @@
 'use strict';
+
 module.exports = function(sequelize, DataTypes) {
-    var Organization = sequelize.define('Organization', {
+    var Group = sequelize.define('Group', {
         name: {
             type: DataTypes.STRING,
-            allowNull:false,
-            unique:true
+            allowNull:false
         }
     }, {
         classMethods: {
             associate: function(models) {
-                this.hasMany(models.Group, {
+                this.belongsTo(models.Organization, {
                     foreignKey: {
                         allowNull:false
                     }
@@ -17,8 +17,8 @@ module.exports = function(sequelize, DataTypes) {
             }
         },
 
-        tableName:'organizations'
+        tableName:'groups'
     });
 
-    return Organization;
+    return Group;
 };
