@@ -1,0 +1,35 @@
+{
+  "development": {
+    "username": "root",
+    "password": "fooberloober",
+    "database": "permissions",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "define": {
+        "underscored":true
+    },
+    "logging":true
+  },
+  "test": {
+    "username": "root",
+    "password": "fooberloober",
+    "database": "permissions_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "define": {
+        "underscored":true
+    },
+    "logging":false
+  },
+  "production": {
+    "username": "doesn't",
+    "password": "matter",
+    "database": "permissions",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "define": {
+        "underscored":true
+    },
+    "logging":false
+  }
+}
